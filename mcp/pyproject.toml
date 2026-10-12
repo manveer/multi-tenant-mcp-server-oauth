@@ -1,0 +1,32 @@
+[project]
+name = "report-demo-mcp"
+version = "0.1.0"
+description = "OAuth-protected MCP tools for a synthetic report API"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "arcade-mcp-server==1.32.1",
+  "httpx==0.28.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "arcade-mcp==1.16.2",
+  "mcp==1.30.0",
+  "pytest==9.1.1",
+  "pytest-asyncio==1.4.0",
+]
+
+[project.entry-points.arcade_toolkits]
+report_demo = "report_demo_mcp"
+
+[build-system]
+requires = ["hatchling==1.32.4"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/report_demo_mcp"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"

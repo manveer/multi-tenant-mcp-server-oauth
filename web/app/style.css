@@ -1,0 +1,9 @@
+:root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #202d31; background: #f6f8f6; }
+body { margin: 0; } main { max-width: 760px; padding: 72px 24px; margin: auto; }
+.eyebrow { font-size: 12px; letter-spacing: .12em; font-weight: 750; color: #477467; }
+h1 { font-size: clamp(2.1rem, 5vw, 3.7rem); font-weight: 650; line-height: 1.08; letter-spacing: -.04em; margin: 24px 0; }
+h2 { margin-top: 0; font-size: 1.4rem; } p { line-height: 1.65; max-width: 65ch; }
+section { background: white; border: 1px solid #d8e1db; border-radius: 16px; padding: 28px; margin: 32px 0; }
+button { font: inherit; background: #245747; border: 0; color: white; border-radius: 8px; padding: 11px 20px; cursor: pointer; }
+button:focus-visible { outline: 3px solid #afccbd; outline-offset: 3px; }
+code { font-size: .87em; overflow-wrap: anywhere; } .note { color: #586961; font-size: 14px; }
