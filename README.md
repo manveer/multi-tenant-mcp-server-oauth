@@ -52,7 +52,7 @@ Knowing a report ID grants nothing — the API resolves the report's workspace a
 ## ⚡ Quickstart
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/multi-tenant-mcp-server-oauth.git
+git clone https://github.com/manveer/multi-tenant-mcp-server-oauth.git
 cd multi-tenant-mcp-server-oauth/web && npm ci && npm test
 cd ../mcp && uv sync --locked --extra dev && uv run pytest
 ```
